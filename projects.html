@@ -6,7 +6,7 @@
     <title>Jackson Eilers | Projects & Research</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&display=swap" rel="stylesheet">
     <link href="/main.css" rel="stylesheet">
     <link rel="manifest" href="/site.webmanifest">
 </head>
@@ -22,226 +22,174 @@
 <body>
     <div class="page">
         <header class="site-header">
-            <div class="site-header__inner">
-                <a class="brand" href="/">Jackson Eilers</a>
-                <nav class="site-nav" aria-label="Main navigation">
-                    <a href="projects.html" aria-current="page">Projects</a>
-                    <a href="photography.html">Photography</a>
-                    <a href="index.html#contact">Contact</a>
-                </nav>
+            <div class="site-brand">
+                <a href="/">Jackson Eilers</a>
+                <span>Digital safety &amp; emerging tech</span>
             </div>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="projects.html" aria-current="page">Projects</a>
+                <a href="photography.html">Photography</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
         </header>
 
         <main>
-            <section class="page-hero">
-                <div class="page-hero__inner">
-                    <span class="hero-eyebrow">Project index</span>
-                    <h1>Research, coursework, and experiments in applied technology.</h1>
-                    <p>From natural language processing to policy design, these projects document how I think about building trustworthy systems and understanding complex networks. Many originated during my time at Stanford; others were collaborations with organizations tackling real-world problems.</p>
+            <section class="section section-intro">
+                <p class="eyebrow">Project index</p>
+                <h1>Research, coursework, and experiments in applied technology.</h1>
+                <p class="lead">From natural language processing to policy design, these projects document how I think about building trustworthy systems and understanding complex networks. Many originated during my time at Stanford; others were collaborations with organizations tackling real-world problems.</p>
+            </section>
+
+            <section class="section" aria-labelledby="research">
+                <h2 id="research">Research &amp; coursework</h2>
+                <div class="project-group">
+                    <article class="project-item">
+                        <p class="project-meta">Coursework · NLP</p>
+                        <h3>CS224N — Natural Language Processing with Deep Learning</h3>
+                        <p>Explored sequence-to-sequence modeling, question answering, and transformer architectures with an emphasis on building systems that behave responsibly.</p>
+                        <div class="link-list">
+                            <a href="https://web.stanford.edu/class/cs224n/" target="_blank" rel="noopener">Course overview</a>
+                            <a href="https://drive.google.com/file/d/1TOGM21GU_HkB0XkAjsBHExI3XsZo5DiN/view?usp=sharing" target="_blank" rel="noopener">Project PDF</a>
+                            <a href="https://github.com/jgeilers/CS224N" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <p class="project-meta">Coursework · Networks</p>
+                        <h3>CS224W — Machine Learning with Graphs</h3>
+                        <p>Modeled complex relationships and diffusion dynamics on large networks to understand how information spreads and where interventions have the greatest impact.</p>
+                        <div class="link-list">
+                            <a href="https://web.stanford.edu/class/cs224w/" target="_blank" rel="noopener">Course overview</a>
+                            <a href="https://drive.google.com/file/d/16_Oz6b09uv6Jn1OG0IQQHPD87KoKsqjJ/view?usp=sharing" target="_blank" rel="noopener">Project PDF</a>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <p class="project-meta">Coursework · Deep learning</p>
+                        <h3>CS230 — Deep Learning</h3>
+                        <p>Built and evaluated end-to-end deep learning pipelines, including computer vision and natural language applications tailored to high-stakes domains.</p>
+                        <div class="link-list">
+                            <a href="https://cs230.stanford.edu/" target="_blank" rel="noopener">Course overview</a>
+                            <a href="https://drive.google.com/file/d/113e_afBXBfH3-sNgoWugmmYxIuwZZbte/view?usp=sharing" target="_blank" rel="noopener">Project PDF</a>
+                            <a href="https://github.com/jgeilers/cs230proj" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <p class="project-meta">Coursework · Information retrieval</p>
+                        <h3>CS124 — From Languages to Information</h3>
+                        <p>Designed information retrieval systems and language models, focusing on human-centered experiences and equitable access to information.</p>
+                        <div class="link-list">
+                            <a href="https://web.stanford.edu/class/cs124/" target="_blank" rel="noopener">Course overview</a>
+                            <a href="https://github.com/jgeilers/CS124" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <p class="project-meta">Coursework · Policy</p>
+                        <h3>MSE234 — Data Privacy and Ethics</h3>
+                        <p>Investigated privacy-preserving techniques, ethical frameworks, and policy levers that enable data-driven innovation without sacrificing trust.</p>
+                        <div class="link-list">
+                            <a href="https://web.stanford.edu/group/msande234/cgi-bin/wordpress/" target="_blank" rel="noopener">Course overview</a>
+                            <a href="https://drive.google.com/file/d/1iou4v8nOBwME-wLnM5kVwRSXImNnC5kH/view?usp=sharing" target="_blank" rel="noopener">Project PDF</a>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <p class="project-meta">Research · Social science</p>
+                        <h3>PSYCH290 — NLP for the Social Sciences</h3>
+                        <p>Applied text-based machine learning to social science questions, surfacing narratives and patterns that inform responsible decision-making.</p>
+                        <div class="link-list">
+                            <a href="https://comppsychology.github.io/psych290/" target="_blank" rel="noopener">Course overview</a>
+                            <a href="https://drive.google.com/file/d/1toWf_f2Z4w1sDsI-ccF7K5ZMenmLAACu/view?usp=sharing" target="_blank" rel="noopener">Project PDF</a>
+                            <a href="https://github.com/jgeilers/psych290" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <p class="project-meta">Coursework · Ethics</p>
+                        <h3>CS181W — Computers, Ethics, and Public Policy</h3>
+                        <p>Examined how policy, design, and ethics intersect to shape the social outcomes of computing, with a focus on accountability mechanisms.</p>
+                        <div class="link-list">
+                            <a href="https://stanfordcs181.github.io/" target="_blank" rel="noopener">Course overview</a>
+                            <a href="https://drive.google.com/file/d/1p-Lf48ZTJBiHfgQwwks5j3qhSEri_3n8/view?usp=sharing" target="_blank" rel="noopener">Project PDF</a>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <p class="project-meta">Research · Disinformation</p>
+                        <h3>Election Integrity Partnership — The Long Fuse</h3>
+                        <p>Co-authored the definitive report on misinformation and coordinated inauthentic behavior targeting the 2020 U.S. election.</p>
+                        <div class="link-list">
+                            <a href="https://www.eipartnership.net/report" target="_blank" rel="noopener">Read the report</a>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <p class="project-meta">Research · National security</p>
+                        <h3>Center for International Security and Cooperation</h3>
+                        <p>Supported Dr. Amy Zegart in research that informed <em>Spies, Lies, and Algorithms</em>, bridging intelligence studies and policy.</p>
+                        <div class="link-list">
+                            <a href="https://press.princeton.edu/books/hardcover/9780691147130/spies-lies-and-algorithms" target="_blank" rel="noopener">About the book</a>
+                        </div>
+                    </article>
                 </div>
             </section>
 
-            <section class="project-section" aria-labelledby="research">
-                <div class="section__inner">
-                    <p class="section-title" id="research">Research &amp; coursework</p>
-                    <div class="project-grid">
-                        <article class="project-card">
-                            <div class="project-meta">
-                                <span>Coursework</span>
-                                <span>NLP</span>
-                            </div>
-                            <h3>CS224N — Natural Language Processing with Deep Learning</h3>
-                            <p>Explored sequence-to-sequence modeling, question answering, and transformer architectures with an emphasis on building systems that behave responsibly.</p>
-                            <div class="project-links">
-                                <a class="chip chip--primary" href="https://web.stanford.edu/class/cs224n/" target="_blank" rel="noopener">Course overview</a>
-                                <a class="chip" href="https://drive.google.com/file/d/1TOGM21GU_HkB0XkAjsBHExI3XsZo5DiN/view?usp=sharing" target="_blank" rel="noopener">Project PDF</a>
-                                <a class="chip" href="https://github.com/jgeilers/CS224N" target="_blank" rel="noopener">GitHub</a>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-meta">
-                                <span>Coursework</span>
-                                <span>Networks</span>
-                            </div>
-                            <h3>CS224W — Machine Learning with Graphs</h3>
-                            <p>Modeled complex relationships and diffusion dynamics on large networks to understand how information spreads and where interventions have the greatest impact.</p>
-                            <div class="project-links">
-                                <a class="chip chip--primary" href="https://web.stanford.edu/class/cs224w/" target="_blank" rel="noopener">Course overview</a>
-                                <a class="chip" href="https://drive.google.com/file/d/16_Oz6b09uv6Jn1OG0IQQHPD87KoKsqjJ/view?usp=sharing" target="_blank" rel="noopener">Project PDF</a>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-meta">
-                                <span>Coursework</span>
-                                <span>Deep Learning</span>
-                            </div>
-                            <h3>CS230 — Deep Learning</h3>
-                            <p>Built and evaluated end-to-end deep learning pipelines, including computer vision and natural language applications tailored to high-stakes domains.</p>
-                            <div class="project-links">
-                                <a class="chip chip--primary" href="https://cs230.stanford.edu/" target="_blank" rel="noopener">Course overview</a>
-                                <a class="chip" href="https://drive.google.com/file/d/113e_afBXBfH3-sNgoWugmmYxIuwZZbte/view?usp=sharing" target="_blank" rel="noopener">Project PDF</a>
-                                <a class="chip" href="https://github.com/jgeilers/cs230proj" target="_blank" rel="noopener">GitHub</a>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-meta">
-                                <span>Coursework</span>
-                                <span>Information retrieval</span>
-                            </div>
-                            <h3>CS124 — From Languages to Information</h3>
-                            <p>Designed information retrieval systems and language models, focusing on human-centered experiences and equitable access to information.</p>
-                            <div class="project-links">
-                                <a class="chip chip--primary" href="https://web.stanford.edu/class/cs124/" target="_blank" rel="noopener">Course overview</a>
-                                <a class="chip" href="https://github.com/jgeilers/CS124" target="_blank" rel="noopener">GitHub</a>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-meta">
-                                <span>Coursework</span>
-                                <span>Policy</span>
-                            </div>
-                            <h3>MSE234 — Data Privacy and Ethics</h3>
-                            <p>Investigated privacy-preserving techniques, ethical frameworks, and policy levers that enable data-driven innovation without sacrificing trust.</p>
-                            <div class="project-links">
-                                <a class="chip chip--primary" href="https://web.stanford.edu/group/msande234/cgi-bin/wordpress/" target="_blank" rel="noopener">Course overview</a>
-                                <a class="chip" href="https://drive.google.com/file/d/1iou4v8nOBwME-wLnM5kVwRSXImNnC5kH/view?usp=sharing" target="_blank" rel="noopener">Project PDF</a>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-meta">
-                                <span>Research</span>
-                                <span>Social science</span>
-                            </div>
-                            <h3>PSYCH290 — NLP for the Social Sciences</h3>
-                            <p>Applied text-based machine learning to social science questions, surfacing narratives and patterns that inform responsible decision-making.</p>
-                            <div class="project-links">
-                                <a class="chip chip--primary" href="https://comppsychology.github.io/psych290/" target="_blank" rel="noopener">Course overview</a>
-                                <a class="chip" href="https://drive.google.com/file/d/1toWf_f2Z4w1sDsI-ccF7K5ZMenmLAACu/view?usp=sharing" target="_blank" rel="noopener">Project PDF</a>
-                                <a class="chip" href="https://github.com/jgeilers/psych290" target="_blank" rel="noopener">GitHub</a>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-meta">
-                                <span>Coursework</span>
-                                <span>Ethics</span>
-                            </div>
-                            <h3>CS181W — Computers, Ethics, and Public Policy</h3>
-                            <p>Examined how policy, design, and ethics intersect to shape the social outcomes of computing, with a focus on accountability mechanisms.</p>
-                            <div class="project-links">
-                                <a class="chip chip--primary" href="https://stanfordcs181.github.io/" target="_blank" rel="noopener">Course overview</a>
-                                <a class="chip" href="https://drive.google.com/file/d/1p-Lf48ZTJBiHfgQwwks5j3qhSEri_3n8/view?usp=sharing" target="_blank" rel="noopener">Project PDF</a>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-meta">
-                                <span>Research</span>
-                                <span>Disinformation</span>
-                            </div>
-                            <h3>Election Integrity Partnership — The Long Fuse</h3>
-                            <p>Co-authored the definitive report on misinformation and coordinated inauthentic behavior targeting the 2020 U.S. election.</p>
-                            <div class="project-links">
-                                <a class="chip chip--primary" href="https://www.eipartnership.net/report" target="_blank" rel="noopener">Read the report</a>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-meta">
-                                <span>Research</span>
-                                <span>National security</span>
-                            </div>
-                            <h3>Center for International Security and Cooperation</h3>
-                            <p>Supported Dr. Amy Zegart in research that informed <em>Spies, Lies, and Algorithms</em>, bridging intelligence studies and policy.</p>
-                            <div class="project-links">
-                                <a class="chip chip--primary" href="https://press.princeton.edu/books/hardcover/9780691147130/spies-lies-and-algorithms" target="_blank" rel="noopener">About the book</a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </section>
-
-            <section class="project-section" aria-labelledby="teaching">
-                <div class="section__inner">
-                    <p class="section-title" id="teaching">Teaching &amp; volunteering</p>
-                    <div class="project-grid">
-                        <article class="project-card">
-                            <div class="project-meta">
-                                <span>Teaching</span>
-                                <span>Stanford</span>
-                            </div>
-                            <h3>CS106A &amp; CS106B — Computer Science Fundamentals</h3>
-                            <p>Served as a teaching assistant for Stanford's introductory computer science sequence, guiding students through Python and C++ foundations.</p>
-                            <div class="project-links">
-                                <a class="chip chip--primary" href="https://web.stanford.edu/class/cs106a/" target="_blank" rel="noopener">CS106A</a>
-                                <a class="chip" href="https://web.stanford.edu/class/cs106b/" target="_blank" rel="noopener">CS106B</a>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-meta">
-                                <span>Teaching</span>
-                                <span>Probability</span>
-                            </div>
-                            <h3>CS109 — Probability for Computer Scientists</h3>
-                            <p>Led recitations and office hours for graduate and undergraduate students learning probability theory, modeling uncertainty, and applying statistical thinking.</p>
-                            <div class="project-links">
-                                <a class="chip chip--primary" href="https://web.stanford.edu/class/cs109/" target="_blank" rel="noopener">Course overview</a>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-meta">
-                                <span>Teaching</span>
-                                <span>AI education</span>
-                            </div>
-                            <h3>Inspirit AI — Global AI Programs</h3>
-                            <p>Designed workshops and mentored high school students building machine learning projects tackling social impact challenges.</p>
-                            <div class="project-links">
-                                <a class="chip chip--primary" href="https://www.inspiritai.com/" target="_blank" rel="noopener">Program website</a>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-meta">
-                                <span>Data for good</span>
-                                <span>Civic tech</span>
-                            </div>
-                            <h3>Bluebonnet Data — Data Science Fellow</h3>
-                            <p>Built data tooling for local campaigns, including analyses for Minnesota State Senator Aric Putnam during the 2020 cycle.</p>
-                            <div class="project-links">
-                                <a class="chip chip--primary" href="https://www.bluebonnetdata.org/" target="_blank" rel="noopener">Bluebonnet Data</a>
-                                <a class="chip" href="https://ballotpedia.org/Aric_Putnam" target="_blank" rel="noopener">Campaign</a>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-meta">
-                                <span>Teaching</span>
-                                <span>Equity</span>
-                            </div>
-                            <h3>National Education Equity Lab — Stanford CS Outreach</h3>
-                            <p>Supported remote CS courses reaching low-income high school students, expanding access to college-level computer science education.</p>
-                            <div class="project-links">
-                                <a class="chip chip--primary" href="https://edequitylab.org/" target="_blank" rel="noopener">Program website</a>
-                                <a class="chip" href="https://digitaleducation.stanford.edu/news/alumni-bring-stanford-computer-science-low-income-high-schools-nationwide" target="_blank" rel="noopener">Stanford news</a>
-                                <a class="chip" href="https://www.wsj.com/articles/stanford-joins-group-offering-classes-to-disadvantaged-high-school-students-11635067801" target="_blank" rel="noopener">WSJ feature</a>
-                            </div>
-                        </article>
-                        <article class="project-card">
-                            <div class="project-meta">
-                                <span>Teaching</span>
-                                <span>Global</span>
-                            </div>
-                            <h3>Code in Place — Stanford's Global CS Classroom</h3>
-                            <p>Volunteer instructor supporting thousands of learners worldwide as they take their first steps in programming.</p>
-                            <div class="project-links">
-                                <a class="chip chip--primary" href="https://codeinplace.stanford.edu/" target="_blank" rel="noopener">Program website</a>
-                            </div>
-                        </article>
-                    </div>
+            <section class="section" aria-labelledby="teaching">
+                <h2 id="teaching">Teaching &amp; community</h2>
+                <div class="project-group">
+                    <article class="project-item">
+                        <p class="project-meta">Teaching · Stanford</p>
+                        <h3>CS106A &amp; CS106B — Computer Science Fundamentals</h3>
+                        <p>Served as a teaching assistant for Stanford's introductory computer science sequence, guiding students through Python and C++ foundations.</p>
+                        <div class="link-list">
+                            <a href="https://web.stanford.edu/class/cs106a/" target="_blank" rel="noopener">CS106A</a>
+                            <a href="https://web.stanford.edu/class/cs106b/" target="_blank" rel="noopener">CS106B</a>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <p class="project-meta">Teaching · Probability</p>
+                        <h3>CS109 — Probability for Computer Scientists</h3>
+                        <p>Led recitations and office hours for graduate and undergraduate students learning probability theory, modeling uncertainty, and applying statistical thinking.</p>
+                        <div class="link-list">
+                            <a href="https://web.stanford.edu/class/cs109/" target="_blank" rel="noopener">Course overview</a>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <p class="project-meta">Teaching · AI education</p>
+                        <h3>Inspirit AI — Global AI Programs</h3>
+                        <p>Designed workshops and mentored high school students building machine learning projects tackling social impact challenges.</p>
+                        <div class="link-list">
+                            <a href="https://www.inspiritai.com/" target="_blank" rel="noopener">Program website</a>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <p class="project-meta">Data for good · Civic tech</p>
+                        <h3>Bluebonnet Data — Data Science Fellow</h3>
+                        <p>Built data tooling for local campaigns, including analyses for Minnesota State Senator Aric Putnam during the 2020 cycle.</p>
+                        <div class="link-list">
+                            <a href="https://www.bluebonnetdata.org/" target="_blank" rel="noopener">Bluebonnet Data</a>
+                            <a href="https://ballotpedia.org/Aric_Putnam" target="_blank" rel="noopener">Campaign</a>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <p class="project-meta">Teaching · Equity</p>
+                        <h3>National Education Equity Lab — Stanford CS Outreach</h3>
+                        <p>Supported remote CS courses reaching low-income high school students, expanding access to college-level computer science education.</p>
+                        <div class="link-list">
+                            <a href="https://edequitylab.org/" target="_blank" rel="noopener">Program website</a>
+                            <a href="https://digitaleducation.stanford.edu/news/alumni-bring-stanford-computer-science-low-income-high-schools-nationwide" target="_blank" rel="noopener">Stanford news</a>
+                            <a href="https://www.wsj.com/articles/stanford-joins-group-offering-classes-to-disadvantaged-high-school-students-11635067801" target="_blank" rel="noopener">WSJ feature</a>
+                        </div>
+                    </article>
+                    <article class="project-item">
+                        <p class="project-meta">Teaching · Global</p>
+                        <h3>Code in Place — Stanford's Global CS Classroom</h3>
+                        <p>Volunteer instructor supporting thousands of learners worldwide as they take their first steps in programming.</p>
+                        <div class="link-list">
+                            <a href="https://codeinplace.stanford.edu/" target="_blank" rel="noopener">Program website</a>
+                        </div>
+                    </article>
                 </div>
             </section>
         </main>
 
         <footer class="footer">
-            <div class="footer__inner">
-                <p>&copy; 2024 Jackson Eilers. Made with curiosity and care.</p>
-                <p>Based in Washington, D.C. · Available for collaborations.</p>
-            </div>
+            <span>&copy; 2025 Jackson Eilers.</span>
+            <span>Based in Washington, D.C. · Available for collaborations.</span>
         </footer>
     </div>
 </body>
