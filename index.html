@@ -11,9 +11,37 @@
     html, body { height: 100%; margin: 0; background: #fff; color: #111; }
     body { display: flex; align-items: center; justify-content: center;
            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .construction { display: flex; align-items: center; gap: 0.45rem;
+                    margin: 1rem; font-size: 1rem; }
+    .sheep { width: 3rem; height: 3rem; flex: none; }
   </style>
 </head>
 <body>
-  <p>[under construction]</p>
+  <p class="construction">
+    <span>[under construction</span>
+    <svg class="sheep" viewBox="0 0 64 64" role="img" aria-labelledby="sheep-title"
+         xmlns="http://www.w3.org/2000/svg">
+      <title id="sheep-title">A construction manager sheep wearing a yellow hard hat and holding a clipboard</title>
+      <g stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 46v10h6V46m13 0v10h6V44" fill="#454545"/>
+        <path d="M16 27c-7-1-10 6-6 10-5 5-1 12 5 11 1 6 9 7 13 3 5 4 12 1 12-4 7 0 10-8 5-12 1-6-5-11-10-8-3-6-12-6-15-1z" fill="#fff"/>
+        <path d="M33 23c-8-7-12 0-5 5m20-5c8-6 12 1 4 5" fill="#666"/>
+        <path d="M31 21h19v13c0 8-4 12-10 12s-10-5-10-12z" fill="#454545"/>
+        <path d="M28 21c0-9 5-14 13-14s13 5 13 14" fill="#f6c445"/>
+        <path d="M38 8V6h6v13h-6z" fill="#ffda65"/>
+        <path d="M26 21h30v4H26z" fill="#f6c445"/>
+        <path d="M38 37q3 3 6 0" fill="none"/>
+        <rect x="45" y="37" width="14" height="19" rx="1.5" fill="#d6b486" transform="rotate(8 52 46)"/>
+        <path d="m50 36 6 1-.5 4-6-1z" fill="#ddd"/>
+        <path d="m49 46 6 1m-6 3 5 1" fill="none"/>
+        <path d="M40 44q2 6 7 3" fill="none"/>
+      </g>
+      <g fill="#fff">
+        <circle cx="36" cy="31" r="1.5"/>
+        <circle cx="46" cy="31" r="1.5"/>
+      </g>
+    </svg>
+    <span>]</span>
+  </p>
 </body>
 </html>
